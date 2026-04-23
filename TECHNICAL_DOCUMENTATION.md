@@ -99,19 +99,7 @@ graph TB
 
 ```mermaid
 erDiagram
-    USER ||--o{ WORKSPACE : "owns"
-    USER ||--o{ WORKSPACEMEMBER : "joins"
-    WORKSPACE ||--o{ WORKSPACEMEMBER : "contains"
-    WORKSPACE ||--o{ PROJECT : "contains"
-    USER ||--o{ PROJECT : "leads"
-    USER ||--o{ PROJECTMEMBER : "joins"
-    PROJECT ||--o{ PROJECTMEMBER : "contains"
-    PROJECT ||--o{ TASK : "contains"
-    USER ||--o{ TASK : "assigns"
-    USER ||--o{ COMMENT : "writes"
-    TASK ||--o{ COMMENT : "has"
-    PROJECT ||--o| PROJECTGITHUBINTEGRATION : "has"
-    PROJECTGITHUBINTEGRATION ||--o{ GITHUBOAUTHSTATE : "generates"
+    
 
     USER {
         string id PK
