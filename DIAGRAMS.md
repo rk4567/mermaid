@@ -113,7 +113,7 @@ erDiagram
     PROJECT ||--o| PROJECTGITHUBINTEGRATION : "has"
     PROJECTGITHUBINTEGRATION ||--o{ GITHUBOAUTHSTATE : "generates"
 
-    USER {
+    /*USER {
         string id PK
         string name
         string email UK
@@ -214,7 +214,7 @@ erDiagram
         string integrationId FK
         datetime expiresAt
         datetime createdAt
-    }
+    }*/
 ```
 
 ---
